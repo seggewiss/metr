@@ -1,0 +1,30 @@
+{
+  "name": "metr",
+  "version": "0.1.0",
+  "description": "A minimal offline metronome",
+  "repository": "https://github.com/seggewiss/metr",
+  "author": {
+    "name": "seggewiss",
+    "url": "https://github.com/seggewiss"
+  },
+  "main": "main/main.js",
+  "scripts": {
+    "build": "node scripts/build.js && electron-builder",
+    "build:linux": "node scripts/build.js && electron-builder --linux",
+    "build:mac": "node scripts/build.js && electron-builder --mac",
+    "build:win": "node scripts/build.js && electron-builder --win",
+    "dev": "node scripts/dev-server.js"
+  },
+  "dependencies": {
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.1",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.6",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  }
+}
